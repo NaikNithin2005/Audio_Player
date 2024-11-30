@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/songs_text"
+        android:textColor="#FFFFFF"
+        android:text="SONGS"
+        android:background="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/no_songs_text"
+        android:text="NO SONGS FOUND"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_view"
+        android:layout_below="@+id/songs_text"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/permission"
+
+        android:padding="10dp"
+        android:background="@drawable/button_background"
+        android:text="GIVE PERMISSION"
+        android:visibility="visible"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/permission"
+        android:background="@drawable/button_background_d"
+        android:layout_marginTop="20dp"
+
+        android:padding="10dp"
+        android:id="@+id/dontGivePermission"
+        android:text="DON'T GIVE PERMISSION"
+        android:visibility="visible"/>
+
+
+
+
+</RelativeLayout>

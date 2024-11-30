@@ -1,0 +1,17 @@
+package com.example.audio_player;
+
+import android.media.MediaPlayer;
+import android.provider.MediaStore;
+
+public class Mymedia_player {
+    static MediaPlayer instance;
+
+    public static MediaPlayer getInstance(){
+        if(instance == null){
+            instance = new MediaPlayer();
+        }
+        return instance;
+    }
+
+    public static int currentIndex = -1;
+}
